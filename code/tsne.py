@@ -171,8 +171,11 @@ def draw_tsne(path,folder,name):
     plt.savefig("pics/"+name+"_3type.png",dpi=1000,bbox_inches = 'tight')
 
 if __name__ == "__main__":
-    path=' '  #your result path,such as 'result/BDCNN'
-    folder=' ' #the folder you want to draw,such as '006'
-    name=' '  #the model name,such as 'BDCNN'
-    draw_tsne(path,folder,name)
+    parser = argparse.ArgumentParser(description='ME recognition using ISDA')
+    parser.add_argument('--path', default='result/BDCNN', type=str,help='your result path')
+    parser.add_argument('--folder',default='006', type=str,help='the folder you want to draw')
+    parser.add_argument('--name',default='BDCNN', type=str,help='the model name')
+    args = parser.parse_args()
+    
+    draw_tsne(args.path,args.folder,args.name)
         

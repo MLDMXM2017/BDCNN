@@ -46,8 +46,10 @@ python train_5type_split.py  --model BDCNN --save_path result/BDCNN_5type
 
 Then you can run the result.py to get the result of acc,recall,F1,UF1, and UAR  
 ```Bash    
-python result.py  --model BDCNN --save_path result/BDCNN_5type
+python result.py  --type 3_class --result_path result/BDCNN
 ```
+
+### 
 
 
 

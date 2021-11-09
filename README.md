@@ -34,6 +34,10 @@ The directory of data shall be represented as follows：
 
 Training the 3-class data by using the following command:
 
+'''Bash
+cd code  
+python train_split.py  
+'''
 
 
 

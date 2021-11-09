@@ -119,7 +119,7 @@ parser.add_argument('--result_path', '-p', default=2, type=int,help='your result
 args = parser.parse_args()
 
 if args.type=='3_class':
-    get_3_class_result(result_path)  #the result path of 3-class
+    get_3_class_result(args.result_path)  #the result path of 3-class
 else:
-    get_5_class_result(result_path)  #the result path of 5-class
+    get_5_class_result(args.result_path)  #the result path of 5-class
   

@@ -49,7 +49,10 @@ Then you can run the result.py to get the result of acc,recall,F1,UF1, and UAR
 python result.py  --type 3_class --result_path result/BDCNN
 ```
 
-### 
+### Draw the tsne
+```Bash    
+python tsne.py  --path result/BDCNN --foder 006 --name BDCNN
+```
 
 
 

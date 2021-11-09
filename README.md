@@ -18,9 +18,9 @@ pickle
 
 You may put the 3-class and 5-class data into the folder data.  
 The directory of data shall be represented as follows：  
--data  
----006  
------Train  
+*data  
+  *006  
+    *Train  
 --------img001.img  
 --------...  
 --------label.txt  
@@ -28,6 +28,11 @@ The directory of data shall be represented as follows：
 --------img001.img  
 --------...  
 --------label.txt  
+
+### Training the BDCNN
+
+Training the 3-class data by using the following command:
+
 
 
 

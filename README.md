@@ -18,10 +18,10 @@ pickle
 
 You may put the 3-class and 5-class data into the folder data.  
 The directory of data shall be represented as follows：  
-*data  
-  *006  
-    *Train  
---------img001.img  
+* data  
+  * 006  
+    * Train  
+     * img001.img  
 --------...  
 --------label.txt  
 -----test  

@@ -113,6 +113,13 @@ def get_5_class_result(result_path):
    get_result(casme_sum,'CASME')
    get_result(samm_sum,'SAMM')
 
-#get_3_class_result(result_path)  #the result path of 3-class
-#get_5_class_result(result_path)  #the result path of 5-class
- 
+parser = argparse.ArgumentParser(description='ME recognition using ISDA')
+parser.add_argument('--type', default='3_class', type=str,help='3_class or 5_class')
+parser.add_argument('--result_path', '-p', default=2, type=int,help='your result path')
+args = parser.parse_args()
+
+if args.type=='3_class':
+    get_3_class_result(result_path)  #the result path of 3-class
+else:
+    get_5_class_result(result_path)  #the result path of 5-class
+  

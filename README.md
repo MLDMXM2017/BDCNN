@@ -27,7 +27,7 @@ The directory of data shall be represented as follows：
     * img001.img  
     * ...  
     * label.txt  
-* 007
+* 007  
 ...  
 
 ### Training the BDCNN

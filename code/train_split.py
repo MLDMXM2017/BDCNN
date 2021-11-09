@@ -163,9 +163,9 @@ def train_fold(fold,record_path,size,is_split,is_augment):
         
         if is_best==True:
             test_prec,test_conf= test(test_loader,model, fc, ce_criterion, epoch,record_file)
-             best_test_conf=test_conf
-             best_test_prec=test_prec
-             best_test_conf=test_conf
+            if test_prec>=best_test_prec:
+                best_test_prec=test_prec
+                best_test_conf=test_conf
             
         save_checkpoint({
             'epoch': epoch + 1,

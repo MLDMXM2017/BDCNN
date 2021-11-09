@@ -14,10 +14,9 @@ import torch.backends.cudnn as cudnn
 import torch.optim
 import torch.utils.data
 from torchvision import transforms
-from models.testNet import testNet
+from models.BDCNN import BDCNN
 
 from getdata import GetData_raw
-#from ISDA_with_vis import EstimatorCV, ISDALoss
 from ISDA_im import EstimatorCV, ISDALoss
 
 

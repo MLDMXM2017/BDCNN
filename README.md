@@ -35,13 +35,18 @@ The directory of data shall be represented as follows：
 Training the 3-class data by using the following command:
 ```Bash  
 cd code  
-python train_split.py  
+python train_split.py --model BDCNN --save_path result/BDCNN
 ```
 
 Training the 5-class data by using the following command:
-```Bash  
-cd code  
-python train_5type_split.py  
+```Bash   
+python train_5type_split.py  --model BDCNN --save_path result/BDCNN_5type
+```
+### Get results
+
+Then you can run the result.py to get the result of acc,recall,F1,UF1, and UAR  
+```Bash    
+python result.py  --model BDCNN --save_path result/BDCNN_5type
 ```
 
 

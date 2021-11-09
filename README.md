@@ -14,6 +14,20 @@ opencv_python==4.2.0.34
 pickle  
 
 ## Usage
+### Dataset Preparation
+
+You may put the 3-class and 5-class data into the folder data.  
+The directory of data shall be represented as follows：  
+-data
+---006
+-----Train
+--------img001.img
+--------...
+--------label.txt
+-----test
+--------img001.img
+--------...
+--------label.txt
 
 
 
